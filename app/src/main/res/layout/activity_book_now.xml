@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookNowActivity"
+    android:background="@drawable/image1">
+
+
+
+    <EditText
+        android:id="@+id/bookerNameEditText"
+        android:hint="@string/your_full_name"
+        style="@style/appBookingEditTextStyle"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@id/bookerPhoneNumberEditText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/bookerPhoneNumberEditText"
+        android:hint="@string/your_phone_number"
+        style="@style/appBookingEditTextStyle"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@id/reasonOfTheMeal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bookerNameEditText" />
+
+    <EditText
+        android:id="@+id/reasonOfTheMeal"
+        style="@style/appBookingEditTextStyle"
+        android:hint="@string/reason_of_the_meal"
+        app:layout_constraintBottom_toBottomOf="@id/numberOfPeople"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bookerPhoneNumberEditText" />
+
+    <Spinner
+        android:id="@+id/numberOfPeople"
+        style="@style/appBookingEditTextStyle"
+        app:layout_constraintBottom_toBottomOf="@id/withChildrenZone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reasonOfTheMeal"/>
+
+    <LinearLayout
+        android:id="@+id/withChildrenZone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@id/dateOfTheMeal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numberOfPeople">
+
+        <TextView
+            android:id="@+id/childrenRadioLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:text="@string/with_children"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/withChildren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/yes"
+                style="@style/radioButtonStyle"
+                android:text="@string/yes"/>
+
+            <RadioButton
+                android:id="@+id/no"
+                style="@style/radioButtonStyle"
+                android:text="@string/no"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/dateOfTheMeal"
+        style="@style/appBookingEditTextStyle"
+        android:hint="@string/select_the_date"
+        android:inputType="date"
+        android:clickable="true"
+        android:focusable="false"
+        app:layout_constraintBottom_toBottomOf="@id/periodOftheDay"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/withChildrenZone"/>
+
+
+    <RadioGroup
+        android:id="@+id/periodOftheDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/submitBookingButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateOfTheMeal">
+
+        <RadioButton
+            android:id="@+id/morning"
+            style="@style/radioButtonStyle"
+            android:text="@string/morning"/>
+
+        <RadioButton
+            android:id="@+id/midday"
+            style="@style/radioButtonStyle"
+            android:text="@string/midday"/>
+
+        <RadioButton
+            android:id="@+id/night"
+            style="@style/radioButtonStyle"
+            android:text="@string/night"/>
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/submitBookingButton"
+        style="@style/appButtonStyle"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/periodOftheDay"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

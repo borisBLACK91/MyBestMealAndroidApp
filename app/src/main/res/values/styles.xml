@@ -1,0 +1,85 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="appButtonStyle">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@drawable/app_button_shape</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="appBookingEditTextStyle">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">@drawable/app_booking_edittext_shape</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:maxLength">50</item>
+    </style>
+
+    <style name="radioButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:buttonTint">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="menuItemStyle">
+        <item name="android:background">@drawable/menu_item_shape</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="menuItemTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+
+    <style name="addressTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="addressMessageTextStyle">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">@drawable/app_booking_edittext_shape</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:maxLength">75</item>
+    </style>
+
+    <style name="dialogAnimation_slide_up_down">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+</resources>

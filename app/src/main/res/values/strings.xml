@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MyBestMeal</string>
+    <string name="book_now">Book now</string>
+    <string name="discover_the_menu">Discover the menu</string>
+    <string name="our_address">Our address</string>
+    <string name="your_full_name">your full name</string>
+    <string name="your_phone_number">your phone number</string>
+    <string name="reason_of_the_meal">reason of the meal</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="with_children">With children</string>
+    <string name="select_the_date">select the date</string>
+    <string name="morning">morning</string>
+    <string name="midday">midday</string>
+    <string name="night">night</string>
+    <string name="booker_name_is_invalid">booker name is invalid!</string>
+    <string name="leave_us_a_word">leave us a word!</string>
+    <string name="submit">Submit</string>
+    <string name="tel_33_0_1234567890">Tel: +33 (0)1234567890</string>
+    <string name="email_mybestmealresto_bestmeal_com">mybestmealresto@bestmeal.com</string>
+    <string name="_14_rue_du_bonheur_et_du_gout_75017_paris_france">14 Rue du bonheur et du gout, 75017 Paris, France</string>
+</resources>
